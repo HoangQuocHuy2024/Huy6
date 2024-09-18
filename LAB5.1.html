@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Design Updates</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, calc(50% - 15px));
+            grid-column-gap: 10px;
+            margin: 20px;
+        }
+        .col {
+            font-size: 28px;
+            padding: 20px;
+            background-color: rgb(240, 255, 250);
+            color: #333;
+            border-radius: 8px;
+            text-align: center;
+        }
+        #button {
+            background-color: rgb(45, 125, 225);
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .inside {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .content {
+            border-radius: 8px;
+            background-color: rgb(240, 255, 250);
+            color: black;
+            flex: 1;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="col">
+            <h1>Material Design</h1>
+            <p>Material 3 is the latest version of Google’s open-source design system. Design and build beautiful, usable products with Material 3.</p>
+            <p id="button">Get Started</p>
+        </div>
+        <div class="col">
+            <img src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/12/hinh-nen-vu-tru-72.jpg" style="max-width: 100%; border-radius: 8px;">
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>News & launches</h1>
+        <div class="inside">
+            <div class="content">
+                <img src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/12/hinh-nen-vu-tru-72.jpg">
+                <h3>Highlights from Material Fest 2024</h3>
+                <p>Catch the key moments and insights from this year's event.</p>
+            </div>
+            <div class="content">
+                <img src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/12/hinh-nen-vu-tru-72.jpg">
+                <h3>New UI Components Released</h3>
+                <p>Explore our latest UI components for seamless design integration.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Design Insights</h1>
+        <div class="inside">
+            <div class="content">
+                <img src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/12/hinh-nen-vu-tru-72.jpg">
+                <h3>Effective UX Strategies</h3>
+                <p>Best practices for enhancing user experience in digital products.</p>
+            </div>
+            <div class="content">
+                <img src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/12/hinh-nen-vu-tru-72.jpg">
+                <h3>Animation in Material Design</h3>
+                <p>How to effectively use animations to enhance your interface.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Resources & Tools</h1>
+        <div class="inside">
+            <div class="content">
+                <h3>Material Design Guidelines</h3>
+                <p>Comprehensive guidelines for implementing Material Design in your projects.</p>
+            </div>
+            <div class="content">
+                <h3>Component Library</h3>
+                <p>Access to our extensive library of pre-built components.</p>
+            </div>
+            <div class="content">
+                <h3>Tutorials & Workshops</h3>
+                <p>Join our tutorials and workshops to deepen your understanding of Material Design.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "F12") {
+                event.preventDefault();
+            }
+        });
+
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
